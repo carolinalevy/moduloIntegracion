@@ -37,5 +37,43 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
             this.codigo_producto = codigo_producto;
         }
 
-    
+        public getMarca(): string {
+            return this.marca;
+        }
+
+        public setMarca(marca:string) {
+            this.marca = marca;
+        }
+
+        public getNombre(): string{
+            return this.nombre;
+        }
+
+        public setNombre(nombre:string){
+            this.nombre = nombre;
+        }
+
+        public getDescripcion(): string{
+            return this.descripcion;
+        }
+
+        public setDescripcion(descripcion: string){
+            this.descripcion = descripcion;
+        }
+
+        public getPrecio(): number{
+            return this.precio;
+        }
+
+        public setPrecio(precio: number){
+            this.precio = precio;
+        }
+
+        public getStock(): number{
+            return this.stock;
+        }
+
+        public setStock(stock: number){
+            this.stock = stock;
+        }
 }
